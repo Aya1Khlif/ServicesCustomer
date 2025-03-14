@@ -1,0 +1,80 @@
+/* Navigation Bar */
+.navbar {
+    background-color: #00796b;
+    padding: 1rem;
+    color: white;
+   
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* قائمة الروابط */
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li:hover {
+    color: #f9f9f9;
+  }
+  
+  /* زر القائمة الجانبية (للهواتف) */
+  .menu-toggle {
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+  }
+  
+  /* جعل القائمة مخفية على الهواتف */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      left: -100%;
+      background-color: #00796b;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      padding: 1rem 0;
+      transition: left 0.3s ease-in-out;
+    }
+  
+    .nav-links.open {
+      left: 0;
+    }
+  
+    .nav-links li {
+      padding: 1rem;
+      width: 100%;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  }
+  
