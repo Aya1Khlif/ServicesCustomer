@@ -6,7 +6,6 @@ import "./NavBar.css";
 const Navbar = ({ items }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // خريطة لربط الأسماء العربية بالـ id الإنجليزية
   const sectionMapping = {
     "الرئيسية": "home",
     "من نحن": "about",
@@ -23,8 +22,6 @@ const Navbar = ({ items }) => {
     <nav className="navbar">
       <div className="nav-container">
         <h1 className="logo">SmartTarget</h1>
-
-        {/* زر القائمة الجانبية */}
         <button className="menu-toggle" onClick={toggleMenu}>
           ☰
         </button>
@@ -34,7 +31,7 @@ const Navbar = ({ items }) => {
             items.map((item, index) => (
               <li key={index}>
                 <Link
-                  to={sectionMapping[item]} // استخدام الـ id المطابق من الخريطة
+                  to={sectionMapping[item]} 
                   smooth={true}
                   duration={800}
                   spy={true}
@@ -51,7 +48,6 @@ const Navbar = ({ items }) => {
   );
 };
 
-// ✅ إضافة PropTypes للتحقق من صحة `props`
 Navbar.propTypes = {
   items: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
