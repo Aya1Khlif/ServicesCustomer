@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './FAQ.css'; // ملف CSS جديد للتنسيق
+import './FAQ.css'; 
 
 const FAQ = ({ faqs }) => {
   const [isOpen, setIsOpen] = useState(false);

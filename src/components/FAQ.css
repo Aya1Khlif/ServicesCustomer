@@ -4,7 +4,7 @@
   }
   
   .faq-button {
-    background: #00796b; /* لون الزر */
+    background: #00796b; 
     color: white;
     padding: 10px 20px;
     border: none;
@@ -15,7 +15,7 @@
   }
   
   .faq-button:hover {
-    background: #005f56; /* لون أغمق عند الـ hover */
+    background: #005f56; 
   }
   
   .faq-modal-overlay {
@@ -41,14 +41,14 @@
     overflow-y: auto;
     position: relative;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    direction: rtl; /* اتجاه من اليمين لليسار */
-    text-align: right; /* النص يبدأ من اليمين */
+    direction: rtl; 
+    text-align: right; 
   }
   
   .close-button {
     position: absolute;
     top: 10px;
-    left: 10px; /* الزر بيكون عاليسار لأنه RTL */
+    left: 10px; 
     background: none;
     border: none;
     font-size: 20px;
