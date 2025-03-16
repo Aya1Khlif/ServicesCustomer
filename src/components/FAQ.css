@@ -1,0 +1,91 @@
+.faq-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .faq-button {
+    background: #00796b; /* لون الزر */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .faq-button:hover {
+    background: #005f56; /* لون أغمق عند الـ hover */
+  }
+  
+  .faq-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .faq-modal {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    direction: rtl; /* اتجاه من اليمين لليسار */
+    text-align: right; /* النص يبدأ من اليمين */
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    left: 10px; /* الزر بيكون عاليسار لأنه RTL */
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .faq-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .faq-item {
+    margin: 20px 0;
+  }
+  
+  .faq-item h3 {
+    color: #00796b; 
+    margin-bottom: 5px;
+    font-size: 22px;
+     font-weight: 700;
+  }
+  
+  .faq-item p {
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 480px) {
+    .faq-modal {
+      width: 95%;
+      padding: 15px;
+    }
+    .faq-item h3 {
+      font-size: 16px;
+    }
+    .faq-item p {
+      font-size: 12px;
+    }
+  }

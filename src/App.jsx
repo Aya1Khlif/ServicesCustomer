@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Chat from "./page/Chat/Chat";
 import "./App.css";
+import FAQ from "./components/FAQ";
 
 function App() {
   const [data, setData] = useState(null);
@@ -44,9 +45,10 @@ function App() {
       <section id="contact">
         <Contact contact={data.contact} />
       </section>
-
+      <FAQ faqs={data.faqs} />
       <Footer text={data.footer} />
       <Chat />
+     
     </>
   );
 }
